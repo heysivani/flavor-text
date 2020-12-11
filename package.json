@@ -1,6 +1,6 @@
 {
   "name": "flavor-text",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Adds flavor to your text.",
   "main": "index.js",
   "scripts": {
