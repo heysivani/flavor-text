@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "chai": "^4.2.0",
+    "husky": "^4.3.5",
     "mocha": "^8.2.1"
   }
 }
