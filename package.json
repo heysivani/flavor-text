@@ -4,11 +4,14 @@
   "description": "Adds flavor to your text.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "pre-commit": "pretty-quick --staged --no-restage",
+    "pre-push": "npm run test",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "preversion": "npm test",
     "postversion": "git push origin --tags --no-verify",
-    "pre-push": "npm run rest",
-    "postinstall": "husky install"
+    "test": "mocha"
   },
   "author": "Sivani heysivani@gmail.com",
   "license": "ISC",
@@ -29,6 +32,8 @@
   "dependencies": {
     "chai": "^4.2.0",
     "husky": "^4.3.5",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "pinst": "^2.1.1",
+    "prettier": "^2.2.1"
   }
 }
