@@ -1,0 +1,19 @@
+{
+  "name": "flavor-text",
+  "version": "1.0.9",
+  "description": "Adds flavor to your text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sivani heysivani@gmail.com",
+  "license": "ISC",
+  "keywords": [
+    "flavor",
+    "text",
+    "npm",
+    "package",
+    "sivani",
+    "heysivani"
+  ]
+}
