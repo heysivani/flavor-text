@@ -4,10 +4,19 @@
   "description": "Adds flavor to your text.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "preversion": "npm test",
+    "postversion": "git push origin --tags --no-verify",
+    "pre-push": "npm run rest",
+    "postinstall": "husky install"
   },
   "author": "Sivani heysivani@gmail.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heysivani/flavor-text"
+  },
+  "homepage": "https://github.com/heysivani/flavor-text",
   "keywords": [
     "flavor",
     "text",
